@@ -1,0 +1,11 @@
+.WeatherTemperature h2 {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.WeatherTemperature .units {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 4.5;
+}
