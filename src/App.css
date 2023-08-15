@@ -1,19 +1,11 @@
 .App {
   color: rgba(7, 44, 44, 0.7);
   font-family: "PT Mono", sans-serif;
-  margin-top: 60px;
+  filter: grayscale(20%);
+  margin: 30px auto;
+  max-width: 660px;
+  padding: 20px 20px 10px 20px;
 }
-
-/*.App .videoBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 660px;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  border-radius: 5px;
-}*/
 
 .App footer {
   font-weight: 800;

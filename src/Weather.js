@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherUpdate from "./WeatherUpdate";
+import videoFile from "./pink-bg.mp4";
 
 import "./Weather.css";
 
@@ -39,10 +40,13 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
-        <div className="container">
+      <div className="container">
+        <div className="Weather">
+          <video className="videoBackground" autoPlay muted loop>
+            <source src={videoFile} type="video/mp4"></source>
+          </video>
           <div className="mb-4">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="mt-4">
               <input
                 type="search"
                 placeholder="Enter city.."
