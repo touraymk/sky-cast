@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherUpdate from "./WeatherUpdate";
 
 import "./Weather.css";
 
@@ -17,6 +18,10 @@ export default function Weather() {
           <h1>Bridgetown</h1>
           <p>Bridgetown, Monday 22:00</p>
         </div>
+      </div>
+
+      <div className="row">
+        <WeatherUpdate />
       </div>
     </div>
   );
