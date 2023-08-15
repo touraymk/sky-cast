@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./WeatherUpdate.css";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherUpdate() {
   return (
@@ -9,12 +10,7 @@ export default function WeatherUpdate() {
         <div>
           <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" />
         </div>
-        <div>
-          <h2 className="d-flex">
-            32 <span className="units">&deg;C |</span>
-            <span className="units">&deg;F</span>
-          </h2>
-        </div>
+        <WeatherTemperature />
       </div>
       <div className="col col-6">
         <ul>

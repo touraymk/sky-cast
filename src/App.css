@@ -1,6 +1,7 @@
 .App {
   color: rgba(7, 44, 44, 0.7);
   font-family: "PT Mono", sans-serif;
+  margin-top: 60px;
 }
 
 /*.App .videoBackground {

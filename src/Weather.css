@@ -1,7 +1,7 @@
 .Weather {
   background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
   max-width: 660px;
-  margin: 50px 30px 0 30px;
+  margin: 0 auto;
   padding: 20px 20px 10px 20px;
   border: 2px solid rgba(7, 44, 44, 0.7);
   border-radius: 5px;

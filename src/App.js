@@ -6,9 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Weather />
-      </div>
+      <Weather defaultCity={"Bridgetown"} />
       <footer className="text-center">
         Coded with <span className="emojiColor">♥️</span> by{" "}
         <a
