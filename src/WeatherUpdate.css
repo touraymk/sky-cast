@@ -20,3 +20,6 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+.WeatherUpdate li::first-letter {
+  text-transform: capitalize;
+}

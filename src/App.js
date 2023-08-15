@@ -6,7 +6,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App shadow-lg">
-      <Weather defaultCity={"Bridgetown"} />
+      <div className="appWrapper mt-5">
+        <Weather defaultCity={"Bridgetown"} />
+      </div>
       <footer className="text-center">
         Coded with <span className="emojiColor">♥️</span> by{" "}
         <a

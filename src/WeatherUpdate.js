@@ -14,10 +14,10 @@ export default function WeatherUpdate(props) {
       </div>
       <div className="col col-6">
         <ul>
-          <li>Feels Like 36 &deg;C</li>
-          <li>Description</li>
-          <li>💨: m/s</li>
-          <li>💦: %</li>
+          <li>Feels Like {Math.round(props.data.feelTemperature)} &deg;C</li>
+          <li>{props.data.description}</li>
+          <li>💨: {Math.round(props.data.wind)} m/s</li>
+          <li>💦: {props.data.humidity} %</li>
         </ul>
       </div>
     </div>
