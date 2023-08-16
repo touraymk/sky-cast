@@ -44,7 +44,7 @@ export default function Weather(props) {
     return (
       <div className="container">
         <div className="Weather">
-          <video className="videoBackground" autoPlay muted loop>
+          <video className="videoBackground shadow-lg" autoPlay muted loop>
             <source src={videoFile} type="video/mp4"></source>
           </video>
           <div className="mb-4">
@@ -58,12 +58,6 @@ export default function Weather(props) {
               <button type="submit">🔎</button>
               <button type="button">📍</button>
             </form>
-          </div>
-          <div className="row">
-            <div className="m-3">
-              <h1>{weatherData.city}</h1>
-              <p>{weatherData.country}, Monday 22:00</p>
-            </div>
           </div>
 
           <div className="row">

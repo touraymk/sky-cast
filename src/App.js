@@ -5,8 +5,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App shadow-lg">
-      <div className="appWrapper mt-5">
+    <div className="App">
+      <div className="appWrapper mt-md-5">
         <Weather defaultCity={"Bridgetown"} />
       </div>
       <footer className="text-center">
