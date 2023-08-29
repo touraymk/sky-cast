@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherUpdate from "./WeatherUpdate";
+import WeatherForecast from "./WeatherForecast";
 import videoFile from "./pink-bg.mp4";
 
 import "./Weather.css";
@@ -62,6 +63,12 @@ export default function Weather(props) {
 
           <div className="row">
             <WeatherUpdate data={weatherData} />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="weather-forecast">
+            <WeatherForecast />
           </div>
         </div>
       </div>
