@@ -13,9 +13,15 @@
   font-weight: 900;
 }
 
-.WeatherUpdate .dayAndTime {
+.WeatherUpdate ul {
   font-weight: 600;
   line-height: 1.5;
+  padding: 0;
+}
+.WeatherUpdate .dayAndTime li {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .WeatherUpdate h2 {
@@ -36,6 +42,9 @@
 }
 
 .WeatherUpdate ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   list-style: none;
   text-align: center;
 }

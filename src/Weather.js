@@ -11,6 +11,7 @@ export default function Weather(props) {
   let [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -22,6 +23,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      coordinates: response.data.coord,
     });
   }
 
@@ -55,6 +57,7 @@ export default function Weather(props) {
                 placeholder="Enter city.."
                 className="col-7"
                 onChange={handleCityChange}
+                autoFocus={true}
               />
               <button type="submit">🔎</button>
               <button type="button">📍</button>
@@ -68,7 +71,7 @@ export default function Weather(props) {
 
         <div className="row">
           <div className="weather-forecast">
-            <WeatherForecast />
+            <WeatherForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
